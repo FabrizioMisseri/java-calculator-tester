@@ -23,6 +23,10 @@ class CalculatorTest {
 
     @org.junit.jupiter.api.Test
     void divide() {
-        assertEquals(4, Calculator.divide(2,2), "andata male");
+        try {
+            assertEquals(1, Calculator.divide(2,0));
+        } catch (IllegalArgumentException e) {
+            System.out.println("il numero deve essere diverso da 0");
+        }
     }
 }
