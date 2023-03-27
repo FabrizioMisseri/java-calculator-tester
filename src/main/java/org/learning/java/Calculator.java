@@ -7,6 +7,7 @@ public class Calculator {
     - float divide(float num1, float num2)
     - float multiply(float num1, float num2)
     */
+    private Calculator(){} // cosi la classe non può essere istanziata
 
 
     public static float add(float num1, float num2){
